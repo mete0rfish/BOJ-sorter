@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "BOJ 문제집 정렬 도우미",
+  "version": "1.0",
+  "description": "백준 온라인 저지(BOJ) 문제집 페이지의 테이블을 클릭으로 정렬합니다.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.acmicpc.net/workbook/view/*",
+        "https://www.acmicpc.net/board/search/*",
+        "https://www.acmicpc.net/board/list/*"
+      ],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}

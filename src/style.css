@@ -1,0 +1,52 @@
+/* 정렬 가능한 모든 헤더에 마우스 커서를 올리면 손가락 모양으로 변경 */
+.table-responsive thead th.sortable {
+  cursor: pointer;
+  -webkit-user-select: none; /* 텍스트 드래그 방지 */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* 헤더에 호버 효과 추가 (어두운 테마 기준) */
+.table-responsive thead th.sortable:hover {
+  background-color: #444;
+}
+
+/* 기본 정렬 화살표 (위아래) - 정렬되지 않았을 때 */
+.table-responsive thead th.sortable::after {
+  content: ' \2195'; /* ↕ */
+  color: #888;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+/* 오름차순 정렬 시 화살표 (위) */
+.table-responsive thead th.sortable.sorted-asc::after {
+  content: ' \25B2'; /* ▲ */
+  color: white;
+}
+
+/* 내림차순 정렬 시 화살표 (아래) */
+.table-responsive thead th.sortable.sorted-desc::after {
+  content: ' \25BC'; /* ▼ */
+  color: white;
+}
+
+/* --- 추가 기능 버튼 공통 스타일 --- */
+.tier-sort-button, .solved-sort-button {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #ccc;
+  background-color: #555;
+  border: 1px solid #666;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tier-sort-button:hover, .solved-sort-button:hover {
+  background-color: #666;
+  color: white;
+}
