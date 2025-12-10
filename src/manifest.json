@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "BOJ 문제집 정렬 도우미",
-  "version": "1.0",
-  "description": "백준 온라인 저지(BOJ) 문제집 페이지의 테이블을 클릭으로 정렬합니다.",
+  "name": "BOJ 리스트 정렬 도우미",
+  "version": "1.0.0",
+  "description": "백준 온라인 저지(BOJ) 리스트 페이지의 테이블을 클릭으로 정렬합니다.",
   "permissions": [],
   "content_scripts": [
     {
@@ -14,5 +14,10 @@
       "js": ["content.js"],
       "css": ["style.css"]
     }
-  ]
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
 }

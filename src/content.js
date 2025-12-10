@@ -44,7 +44,7 @@ if (headers.length > 0) {
 
       const rowsSelector = isBoardPage ? 'tr:not(.success)' : 'tr';
       const rows = Array.from(tbody.querySelectorAll(rowsSelector));
-      
+
       const currentOrder = header.dataset.sortOrder;
       const newOrder = (currentOrder === 'asc') ? 'desc' : 'asc';
 
@@ -92,13 +92,13 @@ function addTierSortButton() {
     event.stopPropagation();
     const tbody = document.querySelector('.table-responsive tbody');
     const rows = Array.from(tbody.querySelectorAll('tr'));
-    
+
     const currentOrder = button.dataset.sortOrder;
     const newOrder = (currentOrder === 'desc') ? 'asc' : 'desc';
 
     // === 로직 수정: 상태 초기화를 가장 먼저 실행 ===
     resetAllSortStates();
-    
+
     // 초기화 후, 현재 클릭된 버튼에만 새로운 상태 적용
     button.dataset.sortOrder = newOrder;
     button.textContent = `티어 정렬 ${newOrder === 'asc' ? '▲' : '▼'}`;
@@ -150,13 +150,13 @@ function addSolvedSortButton() {
 
     // === 로직 수정: 상태 초기화를 가장 먼저 실행 ===
     resetAllSortStates();
-    
+
     // 초기화 후, 현재 클릭된 버튼에만 새로운 상태 적용
     button.dataset.sortOrder = newOrder;
     button.textContent = `해결순 정렬 ${newOrder === 'asc' ? '▲' : '▼'}`;
 
     const isSolved = (row) => row.children[0].querySelector('.label-success') !== null;
-    
+
     rows.sort((a, b) => {
         const solvedA = isSolved(a);
         const solvedB = isSolved(b);
