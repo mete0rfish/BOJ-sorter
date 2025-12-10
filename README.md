@@ -1,3 +1,7 @@
+
+# BOJ 리스트 정렬 도우미
+![Version](https://img.shields.io/badge/version-1.0-blue)
+
 <p align="center">
   <img src="src/icon128.png" alt="BOJ Sorter Logo" width="128">
 </p>
@@ -7,15 +11,16 @@
   <a href="https://your-username.github.io/BOJ-sorter/" target="_blank"><img src="https://img.shields.io/badge/Introduction-green?style=flat-square&logo=github-pages&logoColor=white" alt="Introduction"/></a>
 </p>
 
-# BOJ 리스트 정렬 도우미
-
-![Version](https://img.shields.io/badge/version-1.0-blue)
 
 백준 온라인 저지(BOJ) 리스트 페이지의 테이블을 클릭으로 정렬하는 크롬 확장 프로그램입니다.
+
+<br/>
 
 ## ✨ 기능
 
 *   백준 온라인 저지(BOJ)의 문제 리스트, 게시판 리스트 등 테이블 형태의 데이터를 클릭하여 원하는 기준으로 정렬할 수 있습니다.
+
+<br/>
 
 ## 🚀 설치 방법
 
@@ -35,10 +40,14 @@
 
 6.  클론하거나 다운로드한 프로젝트 폴더(예: `BOJ-sorter`)를 선택합니다.
 
+<br/>
+
 ## 💡 사용 방법
 
 1.  백준 온라인 저지(BOJ)의 문제 리스트 페이지나 게시판 페이지에 접속합니다.
 2.  테이블 헤더(예: 문제 번호, 제목, 정답률 등)를 클릭하여 원하는 기준으로 데이터를 정렬합니다.
+
+<br/>
 
 ## 🤝 기여 방법
 
